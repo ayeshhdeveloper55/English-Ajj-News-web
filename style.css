@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* Header */
+header {
+    background-color: #f0f2f5; /* Dark blue */
+    color: rgb(43, 42, 42);
+}
+
+.top-bar {
+    padding: 10px 0;
+    border-bottom: 1px solid #f7f8fa; /* Slightly darker blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftsideContainer {
+    width: 100%;
+    max-width: 549px;
+    margin: 0 auto;
+    float:left;
+    text-align: center;
+    
+}
+.containerHead{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.leftsideContainer span{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.rightsideContainer span{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.logo img {
+    height: 150px;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    float:left;
+}
+
+.rightsideContainer {
+    width: 100%;
+    max-width: 549px;
+    margin: 0 auto;
+    float:left;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    text-align: right;
+}
+
+.search-bar button {
+    background-color: #003366; /* Dark blue */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Featured News */
+.featured-news {
+    margin: 20px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.featured-grid .main-featured {
+    grid-column: 1 / 2;
+}
+
+.featured-grid .side-featured {
+    grid-column: 2 / 4;
+}
+
+.featured-news article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.featured-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.featured-news h2 {
+    margin-top: 0;
+    color: #004080; /* Dark blue */
+}
+
+.featured-news h3 {
+    margin-top: 0;
+    color: #004080; /* Dark blue */
+}
+
+.read-more {
+    color: #004080; /* Dark blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Latest News */
+.latest-news {
+    margin: 20px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.latest-news article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.latest-news h3 {
+    color: #004080; /* Dark blue */
+}
+
+/* Footer */
+footer {
+    background-color: #01060c; /* Dark blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links ul li {
+    margin: 0 15px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #1d1d1d;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: #333;
+}
+nav ul li:hover > a {
+    background-color: #444;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1d1d1d;
+    min-width: 180px;
+}
+.dropdown a {
+    padding: 12px 20px;
+}
+nav ul li:hover .dropdown {
+    display: block;
+}
